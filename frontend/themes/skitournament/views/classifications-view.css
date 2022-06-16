@@ -1,0 +1,48 @@
+.classifications-view {
+  display: block;
+}
+.classifications-view vaadin-grid {
+  height: 100%;
+  line-height: var(--lumo-line-height-m);
+}
+
+.classifications-view vaadin-grid,
+.classifications-view vaadin-grid-cell-content {
+  background-color: var(--lumo-contrast-10pct);
+}
+
+.classifications-view .card {
+  background-color: var(--lumo-base-color);
+  border-radius: var(--lumo-border-radius);
+  box-shadow: var(--lumo-box-shadow-xs);
+  padding: calc(var(--lumo-space-s) * 1.5) var(--lumo-space-m);
+  text-align: center;
+
+}
+
+.classifications-view .header {
+  align-items: baseline;
+}
+
+.classifications-view .classification-name {
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: var(--lumo-space-s);
+  color: blue;
+  padding-right: 50px;
+}
+
+
+
+.classifications-view .post {
+  color: var(--lumo-secondary-text-color);
+  font-size: var(--lumo-font-size-s);
+  margin-bottom: var(--lumo-space-s);
+  white-space: normal;
+}
+
+.classifications-view .actions {
+  align-items: center;
+}
+
+}

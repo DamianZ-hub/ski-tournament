@@ -1,14 +1,14 @@
 package com.ski.tournament;
 
+import com.vaadin.flow.component.dependency.NpmPackage;
 import com.vaadin.flow.component.page.AppShellConfigurator;
 import com.vaadin.flow.server.PWA;
-
+import com.vaadin.flow.theme.Theme;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.vaadin.artur.helpers.LaunchUtil;
-import com.vaadin.flow.theme.Theme;
-import com.vaadin.flow.component.dependency.NpmPackage;
 
 /**
  * The entry point of the Spring Boot application.
@@ -17,7 +17,7 @@ import com.vaadin.flow.component.dependency.NpmPackage;
  * and some desktop browsers.
  *
  */
-@SpringBootApplication
+@SpringBootApplication(exclude = ErrorMvcAutoConfiguration.class)
 @Theme(value = "skitournament")
 @PWA(name = "Ski Tournament", shortName = "Ski Tournament", offlineResources = {"images/logo.png"})
 @NpmPackage(value = "lumo-css-framework", version = "^4.0.10")

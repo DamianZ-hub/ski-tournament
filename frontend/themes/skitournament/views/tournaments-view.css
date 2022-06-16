@@ -1,3 +1,100 @@
 .tournaments-view {
   display: block;
 }
+.tournaments-view vaadin-grid {
+  height: 100%;
+  line-height: var(--lumo-line-height-m);
+}
+
+.tournaments-view vaadin-grid,
+.tournaments-view vaadin-grid-cell-content {
+  background-color: var(--lumo-contrast-10pct);
+}
+
+.tournaments-view .card {
+  background-color: var(--lumo-base-color);
+  border-radius: var(--lumo-border-radius);
+  box-shadow: var(--lumo-box-shadow-xs);
+  padding: calc(var(--lumo-space-s) * 1.5) var(--lumo-space-m);
+  text-align: center;
+
+}
+
+
+.tournaments-view img {
+  border-radius: 50%;
+  flex-shrink: 0;
+  height: var(--lumo-size-m);
+  margin-right: calc(var(--lumo-space-s) * 1.5);
+  width: var(--lumo-size-m);
+}
+
+.tournaments-view .header {
+  align-items: baseline;
+}
+
+.tournaments-view .competition {
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: var(--lumo-space-s);
+  color: blue;
+  padding-right: 50px;
+}
+
+.tournaments-view .date-time {
+  padding: 10px;
+
+}
+
+.tournaments-view .status {
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: var(--lumo-space-s);
+
+  color: white;
+  border-style: solid;
+  background-color: green;
+  border-radius: 25px;
+  border-color: green;
+  padding: 10px;
+}
+
+.tournaments-view .date {
+  color: var(--lumo-tertiary-text-color);
+  font-size: 30px;
+  font-weight: bold;
+
+}
+
+.tournaments-view .description {
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: var(--lumo-space-s);
+  color: var(--lumo-tertiary-text-color);
+  padding-right: 50px;
+
+}
+
+.tournaments-view .post {
+  color: var(--lumo-secondary-text-color);
+  font-size: var(--lumo-font-size-s);
+  margin-bottom: var(--lumo-space-s);
+  white-space: normal;
+}
+
+.tournaments-view .actions {
+  align-items: center;
+}
+
+.tournaments-view .icon {
+  width: 25px;
+  height: 25px;
+}
+
+.tournaments-view .likes,
+.tournaments-view .comments,
+.tournaments-view .shares {
+  color: var(--lumo-tertiary-text-color);
+  font-size: var(--lumo-font-size-xs);
+  margin-right: var(--lumo-space-l);
+}
